@@ -14,6 +14,8 @@ int main(int argc, char* argv[])
 	fread(&n,sizeof(n),1,fp);
 	fread(&n2,sizeof(n2),1,fp2);
 	add_nbo(n,n2);	
-		
+	
+	fclose(fp2);
+	fclose(fp);
 	return 0;
 }
